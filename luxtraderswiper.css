@@ -1,0 +1,17 @@
+.swiper-container {
+   
+    overflow: hidden;
+   
+}
+.swiper-wrapper {
+  
+  
+  min-width: 0;
+ 
+}
+.swiper-slide {
+  
+  overflow: hidden;
+  min-width: 0;
+}
+

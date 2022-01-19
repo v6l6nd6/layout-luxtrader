@@ -1,0 +1,366 @@
+
+/////////==============second-list============////////////// 
+
+/*
+.lots {
+    text-align: center;
+    
+}
+.second {
+    color: black;
+    font-weight: 500;
+    font-size: 30px;
+}
+.titleseit-head {
+
+		// .titleseit-head__suptitle
+
+		&__suptitle {
+		}
+
+		// .titleseit-head__subtitle
+
+		&__subtitle {
+		}
+}
+.block-decore {
+    
+}
+.block-items {
+    display: flex;
+    align-items: center;
+}
+.decore-part {
+    display: flex;
+    flex: 1 1 auto;
+    &::before {
+        content: '';
+        height: 1px;
+        width: 100%;
+        background-color: #bb9c66;
+     }
+     &::after {
+         content: '';
+         width: 25px;
+         height: 25px;
+         border: solid 1px #bb9c66;
+         transform: rotate(-45deg);
+     }
+     span {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         
+         &::after {
+            content: '';
+            width: 15px;
+            height: 15px;
+            border: solid 1px #bb9c66;
+            transform: rotate(-45deg);
+           
+         }
+         &::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid #bb9c66;
+            
+         }
+         
+     }
+
+     &:last-child {
+         flex-direction: row-reverse;
+     }
+     
+}
+.decore-icon {
+    margin: 0px 50px;
+    
+}
+
+
+
+		.lots-items {
+            
+             min-width: 0;
+         
+        
+         
+        }
+        .lots-items-body {
+            
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            min-width: 0;
+            max-width: 250px;
+            
+           
+            
+            
+         &:last-child {
+            margin-right: 0px;
+         }
+        }
+        .lots-item-body {
+        
+                // .lots-item-body__image
+        
+                &__image {
+                    
+                    position: relative;
+                    border: 3px solid #bb9c66;
+                   overflow: hidden;
+                   height: 250px;
+                  img {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                  }
+                   
+                }
+        
+                // .lots-item-body__title
+        
+                &__title {
+                    margin-top: 30px;
+                    font-size: 15px;
+                    color: black;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+        
+                // .lots-item-body__price
+        
+                &__price {
+                    
+                    
+                    align-items: center;
+                    display: flex;
+                    margin: 30px 0px;
+                }
+        
+                // .lots-item-body__button
+        
+                &__button {
+                    display: inline-block;
+                    padding: 14px 30px;
+                    margin-top: 80px;
+                    border: 3px solid #bb9c66;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    font-weight: 600;
+                    
+                }
+        }
+        .image {
+        
+                // .image__time
+        
+                &__time {
+                    position: absolute;
+                    bottom: -46px;
+                    left: 80px;
+                    width: 80px;
+                    height: 80px;
+                    background-color: white;
+                    transform: rotate(-45deg);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                    padding-top: 10px;
+                    
+                   
+                    
+                    
+                }
+        }
+        .time {
+        
+                // .time__clock
+        
+                &__clock {
+                    padding-right: 9px;
+                    transform: rotate(45deg);
+                    
+                }
+        
+                // .time__number
+        
+                &__number {
+                    transform: rotate(45deg);
+                    
+                }
+        }
+        .price {
+        
+                // .price__follow
+        
+                &__follow {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-bottom: 1px solid #bb9c66;
+                    width: 45px;
+                }
+        
+                // .price__mainprice
+        
+                &__mainprice {
+                    position: relative;
+                    flex: 1 0 33.333%;
+                    z-index: 2;
+                }
+        
+                // .price__buys
+        
+                &__buys {
+                    display: flex;
+                    flex-direction: column;
+                    border-bottom: 1px solid #bb9c66;
+                    width: 45px;
+                   
+                    align-items: center;
+                    
+                }
+        }
+        .follow {
+        
+                // .follow__icon
+        
+                &__icon {
+                    width: 20px;
+                    height: 20px;
+                    background-color: #1c242a;
+                   padding-top: 5px;
+                  transform: rotate(-45deg);
+                  img {
+                    transform: rotate(45deg);
+                }
+                }
+        
+                // .follow__number
+        
+                &__number {
+                    margin: 10px 0px 3px;
+                }
+        }
+
+        .mainprice {
+        
+                // .mainprice__title
+        
+                &__title {
+                   
+                    font-size: 14px;
+                }
+        
+                // .mainprice__directprice
+        
+                &__directprice {
+                margin-top: 20px;
+                    font-size: 26px;
+                    color: #1c242a;
+                    font-weight: 600;
+                    font-family: 'Rubik', sans-serif;
+                    
+                }
+        
+                // .mainprice__bgr
+        
+                &__bgr {
+                  z-index: 1;
+                    position: absolute;
+                    bottom: -30px;
+                    left: 40px;
+                    width: 80px;
+                    height: 80px;
+                    border: 1px solid #bb9c66;
+                    transform: rotate(-45deg);
+                }
+        }
+        .buys {
+        
+                // .buys__icon
+        
+                &__icon {
+                    
+                    width: 20px;
+                    height: 20px;
+                    background-color: #1c242a;
+                    padding-top: 3px;
+                    transform: rotate(-45deg);
+                    img {
+                        transform: rotate(45deg);
+                    }
+                }
+        
+                // .buys__number
+        
+                &__number {
+                    margin: 10px 0px 3px;
+                }
+        }
+
+        @media (max-width:800px) {
+            .lots-items-body {
+                
+                flex: 0 0 50%;
+            }
+        
+        }
+        */
+        /*============*/ 
+
+       /* Слайдер */
+       /*
+       .lots-footer {
+           margin-top: 100px;
+           display: flex;
+           justify-content: center;
+
+		// .lots-footer__left
+
+		&__left {
+		}
+
+		// .lots-footer__center
+
+		&__center {
+            position: relative;
+		}
+
+		// .lots-footer__right
+
+		&__right {
+		}
+}
+.center {
+
+		// .center__circle
+
+		&__circle {
+           
+            
+		}
+
+		// .center__text
+
+		&__text {
+            position: absolute;
+            top: 45%;
+            left: 7px;
+            color: black;
+            font-size: 16px;
+            text-transform: uppercase;
+            z-index: 2;
+            font-weight: 600;
+		}
+}
+*/
